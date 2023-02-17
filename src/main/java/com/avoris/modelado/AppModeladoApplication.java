@@ -14,7 +14,6 @@ public class AppModeladoApplication {
 
 	public static void main(String[] args) throws EstudianteMenorEdadException {
 		SpringApplication.run(AppModeladoApplication.class, args);
-		Estudiante estudiante1= new Estudiante("Pablo", 16, new Fecha(LocalDate.of(2021, 1, 3)), null);
 
 	}
 
