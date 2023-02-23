@@ -1,6 +1,5 @@
 package com.avoris.modelado.model;
 
-import com.avoris.modelado.constantes.MensajesExceptions;
 import com.avoris.modelado.exception.CalificacionInvalidaException;
 import com.avoris.modelado.exception.EstudianteMenorEdadException;
 import com.avoris.modelado.exception.ParametrosNullException;
