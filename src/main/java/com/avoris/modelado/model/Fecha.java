@@ -12,7 +12,13 @@ public final class Fecha {
 
 
     public String getDiaYMes() {
-        return String.valueOf("Dia: "+fecha.getDayOfMonth())+ " " +"Mes: " + String.valueOf(fecha.getMonthValue());
+        StringBuilder mensaje= new StringBuilder();
+        mensaje.append("Dia: ")
+                .append(String.valueOf(fecha.getDayOfMonth()))
+                .append(" ")
+                .append("Mes: ")
+                .append(String.valueOf(fecha.getMonthValue()));
+        return String.valueOf(mensaje);
     }
 
 

@@ -20,4 +20,9 @@ public final class Materia {
 
     }
 
+    public Double getCalificacion(){ return calificacion;}
+
+    public String getNombre(){ return nombre;}
+
+
 }

@@ -19,22 +19,24 @@ public final class Estudiante {
 
     public Estudiante(String nombre, Integer edad, Fecha fechaFinalizacion, List<Materia> materias) throws EstudianteMenorEdadException {
 
-        if(edad < MensajesExceptions.EDAD_MINIMA){
-            throw new EstudianteMenorEdadException("Estudiante menor de edad");
-        }
-
-        if(Strings.isBlank(nombre) || Strings.isEmpty(nombre) || Objects.isNull(fechaFinalizacion) || Objects.isNull(materias)){
-            throw new ParametrosNullException(MensajesExceptions.PARAMS_NULL);
-        }
         this.nombre=nombre;
         this.edad=edad;
         this.fechaFinalizacion=fechaFinalizacion;
+        materias=Collections.unmodifiableList(materias);
         this.materias=materias;
 
     }
 
     public String getNombre() {
         return nombre;
+    }
+    public Integer getEdad() {
+        return edad;
+
+    } public Fecha getFecha() {
+        return fechaFinalizacion;
+    } public List<Materia> getMaterias() {
+        return materias;
     }
 
 }
